@@ -9,5 +9,7 @@ def sum_csv(file):
     return sum_all
 
 f = 'shampoo_sales.csv'
-sum_csv(f)
+res = sum_csv(f)
+print(res)
+
 
