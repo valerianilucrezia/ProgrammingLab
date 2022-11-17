@@ -8,8 +8,8 @@ def sum_csv(file):
     sum_all = sum(values)
     return sum_all
 
-f = 'shampoo_sales.csv'
-res = sum_csv(f)
+#f = 'shampoo_sales.csv'
+#res = sum_csv(f)
 #print(res)
 
 
