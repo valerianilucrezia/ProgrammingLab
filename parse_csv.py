@@ -10,6 +10,6 @@ def sum_csv(file):
 
 f = 'shampoo_sales.csv'
 res = sum_csv(f)
-print(res)
+#print(res)
 
 
