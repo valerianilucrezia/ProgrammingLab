@@ -3,7 +3,12 @@ def sum_csv(file):
     lines = my_file.readlines()
     values = []
     for l in lines[1:]:
-        values.append(float(l.split(',')[1]))
+        value = l.split(',')[1]
+        try:
+            float(value)
+        except:
+            pass
+        values.append(float(value))
     my_file.close()
     sum_all = sum(values)
     return sum_all
