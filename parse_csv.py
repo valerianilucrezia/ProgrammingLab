@@ -1,17 +1,16 @@
-def sum_csv(file):
-    my_file = open(file, 'r')
-    lines = my_file.readlines()
+def sum_list(nome_file):
     values = []
-    for l in lines[1:]:
-        value = l.split(',')[1]
-        try:
-            float(value)
-        except:
-            pass
-        values.append(float(value))
-    my_file.close()
-    sum_all = sum(values)
-    return sum_all
+    my_file = open(nome_file, 'r')
+    #lines = my_file.readlines()
+    for line in my_file:
+        elements = line.split(',')
+        if elements[0] != 'Date':
+            date = elements[0]
+            value = elements[1]
+            values.append(float(value))
+    return sum(values) ##qua 
+print(sum_list('shampoo_sales.csv'))
+
 
 #f = 'shampoo_sales.csv'
 #res = sum_csv(f)
